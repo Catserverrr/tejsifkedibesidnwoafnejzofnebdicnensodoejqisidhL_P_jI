@@ -1,0 +1,542 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+    Name = "Firo [LPI]",
+    Icon = 115532794013832, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+    LoadingTitle = "Firo",
+    LoadingSubtitle = "Made By Spherelua (@2018i in dc)",
+    Theme = "Serenity", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+ 
+    DisableRayfieldPrompts = true,
+    DisableBuildWarnings = true, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+ 
+    ConfigurationSaving = {
+       Enabled = true,
+       FolderName = LPI_Exploits, -- Create a custom folder for your hub/game
+       FileName = "Xoni Huh"
+    },
+ 
+    Discord = {
+       Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+       Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+ 
+    KeySystem = false, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "Untitled",
+       Subtitle = "Key System",
+       Note = "No method of obtaining the key is provided", -- Use this to tell the user how to get a key
+       FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+       SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+    }
+ })
+
+ local LPITab = Window:CreateTab("Let's Party Infinite", 0) -- Title, Image
+
+ local LPI2 = Window:CreateTab("Music Player", 0) -- Title, Image
+ 
+
+ local Button = LPITab:CreateButton({
+    Name = "Go to island",
+    Callback = function()
+    -- The function that takes place when the button is pressed
+    local islandCFrame = CFrame.new(0, 10, 0)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = islandCFrame
+    end,
+ })
+ local Button = LPITab:CreateButton({
+    Name = "Get F3X",
+    Callback = function()
+        local player = game.Players.LocalPlayer
+        local character = player.Character
+        local root = character.HumanoidRootPart
+        local oldpos = root.CFrame
+        local f3xpos = CFrame.new(8.61, 2, -115)
+        root.CFrame = f3xpos
+        task.wait(0.3)
+        root.CFrame = oldpos
+    end,
+ })
+ 
+
+ local Button = LPITab:CreateButton({
+    Name = "Btools (destroy, copy)",
+    Callback = function()
+        local player = game.Players.LocalPlayer
+        local character = player.Character
+        local root = character.HumanoidRootPart
+        local oldpos = root.CFrame
+        local f3xpos = CFrame.new(30.61, 2, -63)
+        root.CFrame = f3xpos
+        task.wait(0.3)
+        root.CFrame = oldpos
+    end,
+ })
+ 
+   local Button = LPITab:CreateButton({
+    Name = "Drop Big Cubes And box ",
+    Callback = function()
+ -- calback
+ local args = {
+	{
+		AccessoryData = {
+			Order = 1,
+			AccessoryType = Enum.AccessoryType.Hat,
+			AssetId = 14746233317
+		}
+	}
+}
+game:GetService("ReplicatedStorage"):WaitForChild("BloxbizRemotes"):WaitForChild("CatalogOnApplyToRealHumanoid"):FireServer(unpack(args))
+
+wait()
+local args = {
+	{
+		AccessoryData = {
+			Order = 1,
+			AccessoryType = Enum.AccessoryType.Hat,
+			AssetId = 15464941831
+		}
+	}
+}
+game:GetService("ReplicatedStorage"):WaitForChild("BloxbizRemotes"):WaitForChild("CatalogOnApplyToRealHumanoid"):FireServer(unpack(args))
+
+wait()
+local args = {
+	{
+		AccessoryData = {
+			Order = 1,
+			AccessoryType = Enum.AccessoryType.Hat,
+			AssetId = 15464941831
+		}
+	}
+}
+game:GetService("ReplicatedStorage"):WaitForChild("BloxbizRemotes"):WaitForChild("CatalogOnApplyToRealHumanoid"):FireServer(unpack(args))
+
+
+wait()
+local args = {
+	{
+		AccessoryData = {
+			Order = 1,
+			AccessoryType = Enum.AccessoryType.Hat,
+			AssetId = 12245158737
+		}
+	}
+}
+game:GetService("ReplicatedStorage"):WaitForChild("BloxbizRemotes"):WaitForChild("CatalogOnApplyToRealHumanoid"):FireServer(unpack(args))
+
+wait()
+local args = {
+	{
+		AccessoryData = {
+			Order = 1,
+			AccessoryType = Enum.AccessoryType.Hat,
+			AssetId = 18303498586
+		}
+	}
+}
+game:GetService("ReplicatedStorage"):WaitForChild("BloxbizRemotes"):WaitForChild("CatalogOnApplyToRealHumanoid"):FireServer(unpack(args))
+wait()
+
+local args = {
+	{
+		AccessoryData = {
+			Order = 1,
+			AccessoryType = Enum.AccessoryType.Hat,
+			AssetId = 13960398302
+		}
+	}
+}
+game:GetService("ReplicatedStorage"):WaitForChild("BloxbizRemotes"):WaitForChild("CatalogOnApplyToRealHumanoid"):FireServer(unpack(args))
+
+wait()
+local args = {
+	{
+		AccessoryData = {
+			Order = 1,
+			AccessoryType = Enum.AccessoryType.Hat,
+			AssetId = 8158052216
+		}
+	}
+}
+game:GetService("ReplicatedStorage"):WaitForChild("BloxbizRemotes"):WaitForChild("CatalogOnApplyToRealHumanoid"):FireServer(unpack(args))
+
+wait()
+game:GetService("ReplicatedStorage"):WaitForChild("DropAccessory"):FireServer()
+
+game:GetService("ReplicatedStorage"):WaitForChild("DropAccessory"):FireServer()
+
+game:GetService("ReplicatedStorage"):WaitForChild("DropAccessory"):FireServer()
+
+game:GetService("ReplicatedStorage"):WaitForChild("DropAccessory"):FireServer()
+
+game:GetService("ReplicatedStorage"):WaitForChild("DropAccessory"):FireServer()
+game:GetService("ReplicatedStorage"):WaitForChild("DropAccessory"):FireServer()
+game:GetService("ReplicatedStorage"):WaitForChild("DropAccessory"):FireServer()
+game:GetService("ReplicatedStorage"):WaitForChild("DropAccessory"):FireServer()
+game:GetService("ReplicatedStorage"):WaitForChild("DropAccessory"):FireServer()
+game:GetService("ReplicatedStorage"):WaitForChild("DropAccessory"):FireServer()
+
+wait(0.1)
+
+local args = {
+	"LoadChar",
+	1
+}
+game:GetService("ReplicatedStorage"):WaitForChild("StatAPI"):FireServer(unpack(args))
+
+
+
+    end,
+ })
+ 
+
+
+ 
+  local Button = LPITab:CreateButton({
+    Name = "Drop hats and reset (you can spam this button)",
+    Callback = function()
+
+game:GetService("ReplicatedStorage"):WaitForChild("DropAccessory"):FireServer()
+
+game:GetService("ReplicatedStorage"):WaitForChild("DropAccessory"):FireServer()
+
+game:GetService("ReplicatedStorage"):WaitForChild("DropAccessory"):FireServer()
+
+game:GetService("ReplicatedStorage"):WaitForChild("DropAccessory"):FireServer()
+
+game:GetService("ReplicatedStorage"):WaitForChild("DropAccessory"):FireServer()
+game:GetService("ReplicatedStorage"):WaitForChild("DropAccessory"):FireServer()
+game:GetService("ReplicatedStorage"):WaitForChild("DropAccessory"):FireServer()
+game:GetService("ReplicatedStorage"):WaitForChild("DropAccessory"):FireServer()
+game:GetService("ReplicatedStorage"):WaitForChild("DropAccessory"):FireServer()
+game:GetService("ReplicatedStorage"):WaitForChild("DropAccessory"):FireServer()
+
+wait(0.1)
+
+local args = {
+	"LoadChar",
+	1
+}
+game:GetService("ReplicatedStorage"):WaitForChild("StatAPI"):FireServer(unpack(args))
+
+
+
+
+
+
+    end,
+ })
+ 
+   local Button = LPITab:CreateButton({
+    Name = "No morir por los bloques que matan",
+    Callback = function()
+		for i,v in pairs (workspace:GetDescendants()) do
+			if v:IsA("BasePart") and v.Locked == false then
+			v.CanTouch = false
+			end
+			end
+     end,
+ })
+ 
+
+
+   local Button = LPITab:CreateButton({
+    Name = "ServerHop",
+    Callback = function()
+    -- thanks to NoobSploit for fixing
+    if httprequest then
+        local servers = {}
+        local req = httprequest({Url = string.format("https://games.roblox.com/v1/games/%d/servers/Public?sortOrder=Desc&limit=100&excludeFullGames=true", PlaceId)})
+        local body = HttpService:JSONDecode(req.Body)
+
+        if body and body.data then
+            for i, v in next, body.data do
+                if type(v) == "table" and tonumber(v.playing) and tonumber(v.maxPlayers) and v.playing < v.maxPlayers and v.id ~= JobId then
+                    table.insert(servers, 1, v.id)
+                end
+            end
+        end
+
+        if #servers > 0 then
+            TeleportService:TeleportToPlaceInstance(PlaceId, servers[math.random(1, #servers)], Players.LocalPlayer)
+        else
+            return notify("Serverhop", "Couldn't find a server.")
+        end
+    else
+        notify("Incompatible Exploit", "Your exploit does not support this command (missing request)")
+    end
+     end,
+ })
+
+
+   local Button = LPITab:CreateButton({
+    Name = "Infinite Yield",
+    Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+     end,
+ })
+
+
+   local Button = LPITab:CreateButton({
+    Name = "Big Avatar Size",
+    Callback = function()
+-- Big size
+
+        local player = game.Players.LocalPlayer
+        local character = player.Character
+        local root = character.HumanoidRootPart
+        local oldpos = root.CFrame
+        local f3xpos = CFrame.new(-36, 2, -149)
+        root.CFrame = f3xpos
+
+        task.wait(0.2)
+
+        root.CFrame = oldpos
+     end,
+ })
+
+
+   local Button = LPITab:CreateButton({
+    Name = "Normal Avatar Size",
+    Callback = function()
+
+-- Normal Size
+
+
+        local player = game.Players.LocalPlayer
+        local character = player.Character
+        local root = character.HumanoidRootPart
+        local oldpos = root.CFrame
+        local f3xpos = CFrame.new(-43, 2, -149)
+        root.CFrame = f3xpos
+
+        task.wait(0.2)
+
+        root.CFrame = oldpos
+
+
+     end,
+ })
+ 
+   local Button = LPITab:CreateButton({
+    Name = "Small Avatar Size",
+    Callback = function()
+
+-- Mini  Size
+
+
+        local player = game.Players.LocalPlayer
+        local character = player.Character
+        local root = character.HumanoidRootPart
+        local oldpos = root.CFrame
+        local f3xpos = CFrame.new(-40, 2, -149)
+        root.CFrame = f3xpos
+
+        task.wait(0.2)
+
+        root.CFrame = oldpos
+
+     end,
+ })
+ 
+-- TAB MUSICA
+
+
+
+
+ local Button = LPI2:CreateButton({
+    Name = "Stop all sounds",
+    Callback = function()
+local args = {
+    [1] = "StopSound"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("WorkspaceAPI"):FireServer(unpack(args))
+     end,
+ })
+
+
+ local Button = LPI2:CreateButton({
+    Name = "Mysterion lo ma grande",
+    Callback = function()
+    
+ local player = game.Players.LocalPlayer
+        local character = player.Character
+        local root = character.HumanoidRootPart
+        local oldpos = root.CFrame
+        local f3xpos = CFrame.new(31, 2, -87)
+        root.CFrame = f3xpos
+wait(0.1)
+local args = {
+    [1] = "PlaySound",
+    [2] = "2528862445"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("WorkspaceAPI"):FireServer(unpack(args))
+
+
+        task.wait(2)
+        root.CFrame = oldpos
+             end,
+ })
+
+
+
+ local Button = LPI2:CreateButton({
+    Name = "peter griffin nigger good quality",
+    Callback = function()
+    
+ local player = game.Players.LocalPlayer
+        local character = player.Character
+        local root = character.HumanoidRootPart
+        local oldpos = root.CFrame
+        local f3xpos = CFrame.new(31, 2, -87)
+        root.CFrame = f3xpos
+wait(0.1)
+local args = {
+    [1] = "PlaySound",
+    [2] = "102525195286926"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("WorkspaceAPI"):FireServer(unpack(args))
+
+
+        task.wait(2)
+        root.CFrame = oldpos
+             end,
+ })
+ 
+
+ 
+ 
+  local Button = LPI2:CreateButton({
+    Name = "ishowmeat nigger",
+    Callback = function()
+    
+ local player = game.Players.LocalPlayer
+        local character = player.Character
+        local root = character.HumanoidRootPart
+        local oldpos = root.CFrame
+        local f3xpos = CFrame.new(31, 2, -87)
+        root.CFrame = f3xpos
+wait(0.1)
+local args = {
+    [1] = "PlaySound",
+    [2] = "129665314043379"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("WorkspaceAPI"):FireServer(unpack(args))
+
+
+        task.wait(2)
+        root.CFrame = oldpos
+             end,
+ })
+ 
+  local Button = LPI2:CreateButton({
+    Name = "cool ass audio",
+    Callback = function()
+    
+ local player = game.Players.LocalPlayer
+        local character = player.Character
+        local root = character.HumanoidRootPart
+        local oldpos = root.CFrame
+        local f3xpos = CFrame.new(31, 2, -87)
+        root.CFrame = f3xpos
+wait(0.1)
+local args = {
+    [1] = "PlaySound",
+    [2] = "76597145596032"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("WorkspaceAPI"):FireServer(unpack(args))
+
+
+        task.wait(2)
+        root.CFrame = oldpos
+             end,
+ })
+ 
+ 
+  local Button = LPI2:CreateButton({
+    Name = "agramane",
+    Callback = function()
+    
+ local player = game.Players.LocalPlayer
+        local character = player.Character
+        local root = character.HumanoidRootPart
+        local oldpos = root.CFrame
+        local f3xpos = CFrame.new(31, 2, -87)
+        root.CFrame = f3xpos
+wait(0.1)
+local args = {
+    [1] = "PlaySound",
+    [2] = "137478052262430"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("WorkspaceAPI"):FireServer(unpack(args))
+
+
+        task.wait(2)
+        root.CFrame = oldpos
+             end,
+ })
+ 
+ 
+
+  local Button = LPI2:CreateButton({
+    Name = "nigger peter bad quality",
+    Callback = function()
+    
+ local player = game.Players.LocalPlayer
+        local character = player.Character
+        local root = character.HumanoidRootPart
+        local oldpos = root.CFrame
+        local f3xpos = CFrame.new(31, 2, -87)
+        root.CFrame = f3xpos
+wait(0.1)
+local args = {
+    [1] = "PlaySound",
+    [2] = "118351112885117"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("WorkspaceAPI"):FireServer(unpack(args))
+
+
+        task.wait(2)
+        root.CFrame = oldpos
+             end,
+ })
+ 
+ 
+ 
+ 
+  local Button = LPI2:CreateButton({
+    Name = "nigger rap",
+    Callback = function()
+    
+ local player = game.Players.LocalPlayer
+        local character = player.Character
+        local root = character.HumanoidRootPart
+        local oldpos = root.CFrame
+        local f3xpos = CFrame.new(31, 2, -87)
+        root.CFrame = f3xpos
+wait(0.1)
+local args = {
+    [1] = "PlaySound",
+    [2] = "138918239847352"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("WorkspaceAPI"):FireServer(unpack(args))
+
+
+        task.wait(2)
+        root.CFrame = oldpos
+             end,
+ })
+ 
+ 
